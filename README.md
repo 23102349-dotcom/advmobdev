@@ -1,50 +1,216 @@
-# Welcome to your Expo app 👋
+Week 3 Activities
+Activity: Advanced Navigation
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Implementation: app/navigation/AdvancedNavigation.tsx
 
-## Get started
+Features:
 
-1. Install dependencies
+Gestures:
 
-   ```bash
-   npm install
-   ```
+Integrated react-native-gesture-handler for swipe gestures.
 
-2. Start the app
+Added swipe-to-open/close Drawer Navigation with adjustable sensitivity (minDistance: 20).
 
-   ```bash
-   npx expo start
-   ```
+Tap-to-select navigation on Playlists for detailed playlist viewing.
 
-In the output, you'll find options to open the app in a
+Wrapped app root with GestureHandlerRootView for Android gesture support.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Custom Transitions:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Used react-native-reanimated for smooth navigation transitions.
 
-## Get a fresh project
+Slide transition (300ms) for Profile and Settings screens.
 
-When you're ready, run:
+Fade transition (200ms) for the Sign-up screen.
 
-```bash
-npm run reset-project
-```
+Added drawer scale animation (content scales to 0.9 when opened).
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Navigation Persistence:
 
-## Learn more
+Implemented navigation state saving using @react-native-async-storage/async-storage.
 
-To learn more about developing your project with Expo, look at the following resources:
+Stores last visited screen and drawer open/closed state.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Restores navigation state on app launch with fallback to Home screen.
 
-## Join the community
+SCREENSHOT:
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Week 4 Activities
+Activity 1: Spotify Playlist Builder App
+
+Implementation: app/Home/PlaylistBuilder.tsx
+
+Features:
+
+State Management:
+
+Uses useReducer for complex playlist state (songs, history, future, input).
+
+Supports add, remove, and clear playlist with undo/redo functionality.
+
+Animations:
+
+Implemented react-native-reanimated with FadeIn and FadeOut for smooth list transitions.
+
+Gestures:
+
+Integrated react-native-gesture-handler’s Swipeable for swipe-to-delete song interaction.
+
+State Persistence:
+
+Playlist and history saved in AsyncStorage and restored on app reload.
+
+Performance Optimization:
+
+Used React.memo to optimize song list rendering.
+
+UI Consistency:
+
+Themed components (ThemedButton, ThemedText, ThemedView) for design consistency.
+
+Activity 2: Spotify Profile Creation Form
+
+Implementation: app/SignUp.tsx (Enhanced existing signup form)
+
+Features:
+
+Real-Time Validation:
+
+Username (3–20 characters, alphanumeric/underscores).
+
+Email (must contain @ and domain).
+
+Genre (must be from predefined list: Pop, Rock, Jazz, Classical, Hip-Hop).
+
+Dynamic Feedback:
+
+Instant error messages displayed below invalid fields.
+
+Shake animation on validation failure using react-native-reanimated.
+
+Form Caching:
+
+AsyncStorage integration for caching and auto-fill on reload.
+
+Clears cache on successful submission.
+
+Dynamic Profile Preview:
+
+Real-time updates for username, email, and genre.
+
+Genre-based placeholder image (https://via.placeholder.com/100?text=[Genre]).
+
+Fade-in animation on preview section for smooth transitions.
+
+Performance Optimization:
+
+React.memo used for preview component to avoid unnecessary re-renders.
+
+Week 5 Activities
+Activity 1: Theme Switcher
+
+Implementation: app/theme/ThemeProvider.tsx
+
+Features:
+
+Global State Management:
+
+Implemented Redux store using Redux Toolkit for light/dark/custom themes.
+
+Global theme applied across all screens in the Spotify app.
+
+Animated Theme Transitions:
+
+Used react-native-reanimated for fade and color interpolation transitions.
+
+Ensures smooth color updates on theme switch.
+
+Custom Theme Options:
+
+Added color picker for accent customization.
+
+Provided three preset options: Light, Dark, and Custom.
+
+Persistence:
+
+Theme settings saved and restored using AsyncStorage.
+
+Testing:
+
+Verified global theme updates across all screens with persisted state after app restart.
+
+Activity 2: Camera with Filters
+
+Implementation: app/Profile/CameraScreen.tsx
+
+Features:
+
+Camera Integration:
+
+Implemented expo-camera for capturing photos directly in the app.
+
+Added capture and toggle buttons for switching camera view.
+
+Real-Time Filters:
+
+Integrated expo-gl shaders for grayscale and sepia filters.
+
+Enabled real-time filter switching during preview.
+
+Editing Tools:
+
+Added crop and rotate functionalities for captured photos.
+
+Supports saving edited images locally.
+
+Filter Intensity Control:
+
+Introduced sliders to adjust filter opacity/intensity.
+
+Smooth real-time updates with react-native-reanimated.
+
+Performance Optimization:
+
+Used React.memo to optimize rendering of filter previews.
+
+Persistence:
+
+Updated profile picture persists across app restarts via local storage.
+
+Week 6 Activities
+Activity 2: Enhancing with Location-Based Map Features
+
+Implementation: app/Map/LocationMap.tsx
+
+Features:
+
+Real-Time Location Tracking:
+
+Integrated react-native-geolocation-service to track user’s current location.
+
+Displayed on map using react-native-maps.
+
+Custom Markers:
+
+Added at least three mock points of interest (e.g., nearby landmarks).
+
+Map Controls:
+
+Enabled zoom and pan for user interactivity.
+
+Geofencing Alerts:
+
+Triggered notifications when entering or leaving defined regions (100m radius).
+
+Custom Map Styling:
+
+Applied dark/retro JSON map style for enhanced visual design.
+
+Cross-Platform Testing:
+
+Tested functionality on both Android and iOS devices for responsiveness.
+
+Documentation:
+
+Included screenshots of map with markers and custom style, plus implementation notes.
