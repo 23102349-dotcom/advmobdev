@@ -1,4 +1,4 @@
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/ee64fe0d-4d98-4390-a16f-42084ca93638" /># Advanced Mobile Development Activities
+# Advanced Mobile Development Activities
 
 ---
 
