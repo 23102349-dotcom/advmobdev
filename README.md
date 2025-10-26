@@ -1,6 +1,6 @@
 WEEK 1 - SCREENSHOT:
-https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/Image_20250829_134629_521.png
-https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/Image_20250829_134629_656.png
+![Week 1] (https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/Image_20250829_134629_521.png)
+![Week 1] (https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/Image_20250829_134629_656.png)
 
 WEEK 2 -  SCREENSHOT:
 [[https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/Image_20250829_134629_656.png
