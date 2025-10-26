@@ -9,7 +9,16 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.myapp",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to show you on the map and provide location-based features.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location in the background to provide geofencing alerts when you enter or leave points of interest.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyAvJXk6jPspU-Xz2aVslQCqAHctLoiVOmE"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +28,18 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.yourcompany.myapp",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBcq_ij-fh5ooxg8d02hHjRlthnUir-BhI"
+        }
+      }
     },
     "web": {
       "output": "static",
@@ -27,6 +47,14 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location for map features and geofencing alerts.",
+          "locationAlwaysPermission": "Allow $(PRODUCT_NAME) to use your location in the background for geofencing.",
+          "locationWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location while using the app."
+        }
+      ],
       [
         "expo-splash-screen",
         {
@@ -43,6 +71,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "51264b9d-d492-4a89-91bc-ca82d4677310"
+      }
     }
   }
 }
