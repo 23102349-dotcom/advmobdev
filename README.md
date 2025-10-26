@@ -1,4 +1,4 @@
-# Advanced Mobile Development Activities
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/ee64fe0d-4d98-4390-a16f-42084ca93638" /># Advanced Mobile Development Activities
 
 ---
 
@@ -94,6 +94,10 @@
 - **Performance Optimization:**  
   Used `React.memo` to prevent unnecessary re-renders.
 
+**Screenshot:**  
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/6f11f69d-edf5-47e7-993e-882a0290fd5a.jpg)
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/ee044f26-34f5-4e03-8bc3-6c9a38ba3721.jpg)
+
 ---
 
 ## Week 5 - Activities
@@ -148,6 +152,12 @@
 - **Persistence:**  
   Updated profile picture persists across app restarts via local storage.
 
+**Screenshot:**  
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/3467973f-3d57-48fe-bf0f-8c5d87f94048.jpg)
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/db0754ef-dca9-4072-a3e3-f957724f6aac.jpg)
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/63c66b2c-e3fe-4605-88df-6ddbd34d9698.jpg)
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/48fa4231-14eb-4f7e-a136-9951b82ac002.jpg)
+
 ---
 
 ## Week 6 - Activities
@@ -175,5 +185,5 @@
 - **Cross-Platform Testing:**  
   Verified functionality on both Android and iOS for responsiveness.
 
-- **Documentation:**  
-  Included screenshots of the map with markers and custom style, along with implementation notes.
+  **Screenshot:**  
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/0d3ff3e6-8b5f-44ab-9414-b16eaa3df764.jpg)
