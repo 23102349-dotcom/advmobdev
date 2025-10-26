@@ -1,48 +1,31 @@
 WEEK 1 - SCREENSHOT:
-![Week 1](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/Image_20250829_134629_521.png)
-![Week 1](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/Image_20250829_134629_656.png)
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/Image_20250829_134629_521.png)
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/Image_20250829_134629_656.png)
 
 WEEK 2 -  SCREENSHOT:
-[[https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/Image_20250829_134629_656.png
-](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/ca61db9f-9cf2-4dcd-bd01-b43f00a2f831.jpg)
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/ca61db9f-9cf2-4dcd-bd01-b43f00a2f831.jpg)
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/7c87a5bd-b9e1-400d-8ce1-01dbc1dc3ef7.jpg)
 
 Week 3 Activities
 Activity: Advanced Navigation
-
 Implementation: app/navigation/AdvancedNavigation.tsx
-
 Features:
-
 Gestures:
-
 Integrated react-native-gesture-handler for swipe gestures.
-
 Added swipe-to-open/close Drawer Navigation with adjustable sensitivity (minDistance: 20).
-
 Tap-to-select navigation on Playlists for detailed playlist viewing.
-
 Wrapped app root with GestureHandlerRootView for Android gesture support.
-
 Custom Transitions:
-
 Used react-native-reanimated for smooth navigation transitions.
-
-Slide transition (300ms) for Profile and Settings screens.
-
+Tansition (300ms) for Profile and Settings screens.
 Fade transition (200ms) for the Sign-up screen.
-
 Added drawer scale animation (content scales to 0.9 when opened).
-
 Navigation Persistence:
-
 Implemented navigation state saving using @react-native-async-storage/async-storage.
-
 Stores last visited screen and drawer open/closed state.
-
 Restores navigation state on app launch with fallback to Home screen.
-
 SCREENSHOT:
-
+![](https://github.com/23102349-dotcom/advmobdev/blob/main/Screenshot/db0754ef-dca9-4072-a3e3-f957724f6aac.jpg)
 
 Week 4 Activities
 Activity 1: Spotify Playlist Builder App
